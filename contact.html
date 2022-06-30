@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+        }
+        .navigation {
+            display: inline-block;
+            float: none;
+            margin-top: 50px;
+            margin-left: 100px;
+            text-decoration: none;
+            color: darkblue;
+        }
+        #color {
+            background-color: lightskyblue;
+            border-radius: 7px;
+        }
+        .current {
+            background-color: darkslateblue;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .other {
+            color: darkslategray;
+        }
+        #horizontal {
+            padding-top: 30px;
+        }
+        footer {
+            font-size: 10px;
+            text-align: center;
+        }
+        #secondline {
+            margin-top: 150px;
+        }
+        #background {
+            background-color: darkslateblue;
+            color: white;
+            margin-top: -141px;
+            border-radius: 7px;
+        }
+        h2
+        {
+            text-align: center;
+            padding-top: 25px;
+        }
+        #contactform
+        {
+            background: lightskyblue;
+            height: 440px;
+            border-radius: 5px;
+            width: 90%;
+            margin-left: 80px;
+        }
+        table
+        {
+            text-align: left;
+            padding: 25px 20px 10px 30px;
+            border-radius: 4px;
+        }
+        textarea, input, select
+        {
+            border: 1px solid darkslategray;
+            border-radius: 4px;
+            width: 650px;
+            height: 50px;
+        }
+        #submit
+        {
+            color:white;
+            background-color: darkslateblue;
+            padding: 10px;
+            border-radius: 5px;
+            width: 500px;
+            margin-left: 460px;
+        }
+        section{
+            margin-top: 10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div id="color">
+    <header>
+        <a class="navigation other" href="homepage.html">SHORT BIOGRAPHY</a>
+        <a class="navigation other" href="about.html">THINGS I LIKE</a>
+        <a class="navigation other" href="faculty.html">MY FACULTY</a>
+        <a class="navigation current" href="contact.html">CONTACT</a>
+    </header>
+
+    <div id = "horizontal">
+        <hr/>
+    </div>
+</div>
+
+<section>
+
+    <h2>Contact Form</h2>
+
+    <div id="contactform">
+
+        <table>
+            <tr>
+                <td>First name</td>
+                <td>Last name</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Your name..."></td>
+                <td><input type="text" placeholder="Your last name..."></td>
+            </tr>
+            <tr>
+                <td>Date of birth</td>
+                <td>Subject</td>
+            </tr>
+            <tr>
+                <td><input type="date"></td>
+                <td><textarea placeholder="Write something..."></textarea></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <select>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CV <br/><input type="file" style="border:none;"></td>
+            </tr>
+        </table>
+
+        <input id="submit" type="submit" value="Submit">
+    </div>
+
+</section>
+
+
+<div id = "background">
+    <hr id = "secondline"/>
+    <footer><p>PERSONAL WEBSITE</p><a>&copy; 2022. Faculty of Computer Science and Engineering, Skopje</a></footer>
+</div>
+
+</body>
+</html>
